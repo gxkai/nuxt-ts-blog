@@ -1,0 +1,29 @@
+name: build
+
+on: [push]
+
+jobs:
+  eslint:
+    name: eslint
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+    - name: yarn install
+      run: yarn install
+    - name: lint
+      run: yarn run lint
+
+  # build:
+
+  #   runs-on: ubuntu-latest
+
+  #   steps:
+  #   - uses: actions/checkout@master
+  #   - name: yarn install
+  #     run: yarn install
+  #   - name: hello world
+  #     run: echo 'hello world'
+  #   - name: test coverage
+  #     run: |
+  #       yarn run test:coverage
