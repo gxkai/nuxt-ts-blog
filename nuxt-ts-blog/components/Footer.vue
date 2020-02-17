@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <div class="container mx-auto">
+    <div class="container mx-auto fixed bottom-0">
       <p class="text-gray-100 text-center text-base">
         @2020-2021 &hearts; gxkai
       </p>
