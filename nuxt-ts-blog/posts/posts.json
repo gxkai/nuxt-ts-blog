@@ -3,15 +3,15 @@
     "filename": "nginx",
     "slugifiedFilename": "nginx",
     "title": "nginx",
-    "date": "yyyy-02-Mo 07:54:21",
-    "top_img": "./top_img.png",
+    "date": "2020-02-Mo 12:57:46",
+    "top_img": "./top_img.jpg",
     "tags": [
-      ""
+      "nginx"
     ],
     "categories": [
-      ""
+      "服务器"
     ],
     "draft": false,
-    "description": ""
+    "description": "docker-compose:"
   }
 ]

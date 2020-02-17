@@ -20,10 +20,7 @@
         </div>
       </div>
 
-      <div class="hidden md:flex">
-        <nuxt-link class="text-white ml-4 font-light no-underline" tag="a" to="/open-source">
-          开源
-        </nuxt-link>
+      <div class="hidden md:flex md:items-center">
         <a
           href="https://github.com/gxkai"
           target="_blank"
@@ -36,17 +33,30 @@
           class="text-white ml-4 font-light no-underline"
           >掘金</a
         >
-        <img
-          src="https://avatars2.githubusercontent.com/u/30716965?s=40&u=3570765d7758a482e2bc3dec62fd6309de00eaf8&v=4"
-          class="ml-4"
-        />
       </div>
-
+      <img
+        src="https://avatars2.githubusercontent.com/u/30716965?s=40&u=3570765d7758a482e2bc3dec62fd6309de00eaf8&v=4"
+        class="ml-4"
+      />
       <span
-        class="md:hidden mdi text-white text-lg dropdown-menu-toggle"
+        class="md:hidden mdi text-white text-lg dropdown-menu-toggle ml-4"
         :class="menutoggleClass"
         @click="toggleDropdownMenu"
       />
+    </div>
+    <div class="sm:flex sm:flex-col md:hidden w-full bg-gray-600" v-if="dropdownMenuVisible">
+      <a
+        href="https://github.com/gxkai"
+        target="_blank"
+        class="text-white ml-4 font-light no-underline block text-center py-2"
+        >GitHub</a
+      >
+      <a
+        href="https://juejin.im/user/59f900066fb9a044fa192a6a"
+        target="_blank"
+        class="text-white ml-4 font-light no-underline block text-center py-2"
+        >掘金</a
+      >
     </div>
   </nav>
 </template>
