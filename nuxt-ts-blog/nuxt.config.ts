@@ -36,7 +36,7 @@ const config: Configuration = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '田勇的博客。技术、生活及其它……' },
+      { hid: 'description', name: 'description', content: '顾旭凯的博客。技术、生活及其它……' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },

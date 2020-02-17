@@ -1,0 +1,11 @@
+version: '2.0'
+
+services:
+  nginx:
+    restart: always
+    image: nginx
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ~/html:/usr/share/nginx/html

@@ -97,11 +97,11 @@ export default class Index extends Vue {
     return {
       title: '首页',
       meta: [
-        { hid: 'keywords', name: 'keywords', content: '田写，田勇的博客，tianyong90,田较瘦' },
+        { hid: 'keywords', name: 'keywords', content: '顾旭凯，顾旭凯的博客，gxkai,小刀' },
         {
           hid: 'description',
           name: 'description',
-          content: '田勇的个人博客，技术、分享、生活及其它',
+          content: '顾旭凯的个人博客，技术、分享、生活及其它',
         },
       ],
     }

@@ -36,7 +36,7 @@ fs.mkdirp(`./posts/${slugTitle}`)
 
 const frontmatterData = {
   title,
-  date: dayjs().format('YYYY-MM-dd HH:mm:ss'),
+  date: dayjs().format('yyyy-MM-dd HH:mm:ss'),
   top_img: './top_img.png',
   tags: [''],
   categories: [''],

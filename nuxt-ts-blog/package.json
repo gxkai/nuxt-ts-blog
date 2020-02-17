@@ -2,13 +2,14 @@
   "name": "blog",
   "version": "1.0.0",
   "description": "My splendid Nuxt.js project",
-  "author": "tianyong90",
+  "author": "gxkai",
   "private": true,
   "scripts": {
     "dev": "yarn run generate-post-list && nuxt-ts",
     "build": "yarn run generate-post-list --production && nuxt-ts build",
     "start": "nuxt-ts start",
-    "generate": "nuxt-ts generate",
+    "pm2": "pm2 start npm -- run start",
+    "generate": "nuxt-ts generate && scp -r dist/* root@139.196.102.55:~/html",
     "lint": "eslint --ext .ts,.js,.vue --ignore-path .eslintignore .",
     "test": "jest",
     "generate-post-list": "ts-node --project scripts/tsconfig.json scripts/generate-post-list.ts generate",
@@ -98,7 +99,8 @@
   },
   "config": {
     "nuxt": {
-      "port": "3000"
+      "host": "0.0.0.0",
+      "port": "80"
     }
   }
 }
