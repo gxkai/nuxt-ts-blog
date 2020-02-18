@@ -1,5 +1,8 @@
 <template>
   <div class="container mx-auto">
+    <Title />
+    <ImageCom />
+    <!--    <ContainerCom />-->
     <h4>
       <span class="bg-green-200 px-2 py-1">顾旭凯</span>
       <span class="bg-blue-200 px-2 py-1">全栈工程师</span>
@@ -33,9 +36,12 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import Title from '~/components/Title.vue'
+import ImageCom from '~/components/ImageCom.vue'
+import ContainerCom from '~/components/ContainerCom.vue'
 
 export default Vue.extend({
-  components: {},
+  components: { ContainerCom, ImageCom, Title },
 
   async asyncData(app) {},
 

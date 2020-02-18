@@ -150,6 +150,7 @@ $nav-height: 45px;
 
     &::placeholder {
       color: #ababab;
+      text-align: center;
     }
   }
 

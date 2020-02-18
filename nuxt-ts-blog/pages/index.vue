@@ -1,51 +1,55 @@
 <template>
-  <div class="container mx-auto">
-    <div class="post-list">
-      <nuxt-link
-        v-for="post in paginatedPosts.data"
-        :key="post.title"
-        class="shadow-md rounded-lg overflow-hidden no-underline post-list-item"
-        :to="'/posts/' + post.slugifiedFilename"
-      >
-        <div class="cover-wrapper">
-          <img :src="coverImgUrl(post)" loading="lazy" class="post-cover" />
-        </div>
-
-        <div class="flex flex-col h-full justify-between p-4">
-          <div
-            class="text-gray-800 text-lg font-normal no-underline post-title"
-            v-html="post.title"
-          />
-
-          <p class="text-xs text-gray-700 post-description" v-html="post.description" />
-
-          <div>
-            <span
-              v-for="(tag, tagIndex) in post.tags"
-              :key="tagIndex"
-              class="bg-gray-600 mr-1 px-2 py-1 rounded-sm text-xs text-white font-light tag"
-              >{{ tag }}</span
-            >
+  <div>
+    <div class="container mx-auto">
+      <div class="post-list">
+        <nuxt-link
+          v-for="post in paginatedPosts.data"
+          :key="post.title"
+          class="shadow-md rounded-lg overflow-hidden no-underline post-list-item"
+          :to="'/posts/' + post.slugifiedFilename"
+        >
+          <div class="cover-wrapper">
+            <img :src="coverImgUrl(post)" loading="lazy" class="post-cover" />
           </div>
-        </div>
-      </nuxt-link>
-    </div>
 
-    <div class="paginator">
-      <nuxt-link
-        v-if="paginatedPosts.total_pages > 1 && paginatedPosts.page !== 1"
-        tag="a"
-        :to="paginatedPosts.prev_url"
-        class="paginator-btn mr-auto btn-prev"
-        ><span class="mdi mdi-chevron-left"></span> 上一页
-      </nuxt-link>
-      <nuxt-link
-        v-if="paginatedPosts.total_pages > 1 && paginatedPosts.page !== paginatedPosts.total_pages"
-        tag="a"
-        :to="paginatedPosts.next_url"
-        class="paginator-btn ml-auto btn-next"
-        >下一页<span class="mdi mdi-chevron-right"></span
-      ></nuxt-link>
+          <div class="flex flex-col h-full justify-between p-4">
+            <div
+              class="text-gray-800 text-lg font-normal no-underline post-title"
+              v-html="post.title"
+            />
+
+            <p class="text-xs text-gray-700 post-description" v-html="post.description" />
+
+            <div>
+              <span
+                v-for="(tag, tagIndex) in post.tags"
+                :key="tagIndex"
+                class="bg-gray-600 mr-1 px-2 py-1 rounded-sm text-xs text-white font-light tag"
+                >{{ tag }}</span
+              >
+            </div>
+          </div>
+        </nuxt-link>
+      </div>
+
+      <div class="paginator">
+        <nuxt-link
+          v-if="paginatedPosts.total_pages > 1 && paginatedPosts.page !== 1"
+          tag="a"
+          :to="paginatedPosts.prev_url"
+          class="paginator-btn mr-auto btn-prev"
+          ><span class="mdi mdi-chevron-left"></span> 上一页
+        </nuxt-link>
+        <nuxt-link
+          v-if="
+            paginatedPosts.total_pages > 1 && paginatedPosts.page !== paginatedPosts.total_pages
+          "
+          tag="a"
+          :to="paginatedPosts.next_url"
+          class="paginator-btn ml-auto btn-next"
+          >下一页<span class="mdi mdi-chevron-right"></span
+        ></nuxt-link>
+      </div>
     </div>
   </div>
 </template>

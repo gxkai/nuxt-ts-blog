@@ -4,7 +4,12 @@ $mdi-font-path: '~@mdi/font/fonts';
 @import "~prism-themes/themes/prism-atom-dark.css";
 @import "~github-markdown-css/github-markdown.css";
 @import "~normalize.css/normalize.css";
-
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+::selection{background-color: aliceblue}
+.font-serif{font-family : 'Quicksand', sans-serif;}
+.smooth {
+  transition: box-shadow 0.3s ease-in-out;
+}
 html,
 body {
   margin: 0;
