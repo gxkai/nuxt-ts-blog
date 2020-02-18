@@ -22,9 +22,6 @@
       <span class="bg-purple-200 px-2 py-1">Java</span>
     </h4>
     <h4>
-      <span class="bg-green-200 px-2 py-1"
-        >Github: <a href="https://github.com/gxkai" target="_blank">gxkai</a></span
-      >
       <span class="bg-blue-200 px-2 py-1">意向： 全栈工程师 15-18K</span>
     </h4>
     <h4>
