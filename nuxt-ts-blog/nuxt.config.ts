@@ -39,7 +39,7 @@ const config: Configuration = {
       { hid: 'description', name: 'description', content: '顾旭凯的博客。技术、生活及其它……' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    script: [{ src: 'https://hm.baidu.com/hm.js?d89fed8d7df0e4e5a3464224e0802e04' }],
+    script: [{ src: 'https://hm.baidu.com/hm.js?d6c555ab07809e8fd66eaa2022f3074b' }],
   },
 
   /*
