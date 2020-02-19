@@ -25,17 +25,6 @@
       </div>
       <div class="m-auto  search-bar">
         <input v-model="keyword" type="text" class="search-input" placeholder="搜索文章" />
-
-        <div v-show="searchResult.length > 0" class="search-result">
-          <nuxt-link
-            v-for="(post, index) in searchResult"
-            :key="index"
-            tag="a"
-            class="search-result-item"
-            :to="'/posts/' + post.slugifiedFilename"
-            >{{ post.title }}</nuxt-link
-          >
-        </div>
       </div>
       <span
         class="md:hidden mdi text-white text-lg dropdown-menu-toggle ml-4"
@@ -54,6 +43,20 @@
         <nuxt-link class="inline-block py-2 text-white no-underline" to="/kobe">Kobe</nuxt-link>
       </li>
     </ul>
+    <div
+      v-show="searchResult.length > 0"
+      class="sm:flex sm:flex-col  w-full bg-transparent mt-5 list-none p-0"
+    >
+      <li class="text-center">
+        <nuxt-link
+          v-for="(post, index) in searchResult"
+          :key="index"
+          class="inline-block py-2 text-white no-underline"
+          :to="'/posts/' + post.slugifiedFilename"
+          >{{ post.title }}</nuxt-link
+        >
+      </li>
+    </div>
   </nav>
 </template>
 <script lang="ts">
