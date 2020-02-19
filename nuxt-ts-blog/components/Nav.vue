@@ -17,8 +17,8 @@
             >
           </li>
           <li class="mr-2">
-            <nuxt-link class="inline-block py-2 px-2 text-white no-underline" to="/about"
-              >About</nuxt-link
+            <nuxt-link class="inline-block py-2 px-2 text-white no-underline" to="/kobe"
+              >Kobe</nuxt-link
             >
           </li>
         </ul>
@@ -51,7 +51,7 @@
         <nuxt-link class="inline-block py-2 text-white no-underline" to="/">Home</nuxt-link>
       </li>
       <li class="text-center">
-        <nuxt-link class="inline-block py-2 text-white no-underline" to="/about">About</nuxt-link>
+        <nuxt-link class="inline-block py-2 text-white no-underline" to="/kobe">Kobe</nuxt-link>
       </li>
     </ul>
   </nav>
