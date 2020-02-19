@@ -1,6 +1,7 @@
 <template>
-  <div>
+  <div class="text-center">
     <h1>{{ error.statusCode }}</h1>
+    <nuxt-link to="/">Back Home</nuxt-link>
   </div>
 </template>
 
