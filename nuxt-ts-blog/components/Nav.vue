@@ -110,6 +110,7 @@ export default class Nav extends Vue {
   @Watch('$route')
   onRouteChange() {
     this.keyword = ''
+    this.toggleDropdownMenu()
   }
 
   toggleDropdownMenu() {
