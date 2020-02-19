@@ -1,8 +1,8 @@
 <template>
   <div class="container mx-auto -mt-4">
-    <div class="mx-0 sm:mx-6">
+    <div class="mx-4 sm:mx-6">
       <div
-        class="bg-white w-full p-8 md:p-24 text-xl md:text-2xl text-grey-darkest leading-normal shadow-md mt-5"
+        class="bg-white w-full p-4 md:p-24 text-lg md:text-2xl text-grey-darkest leading-normal shadow-md mt-5"
       >
         <!--Post Content-->
 

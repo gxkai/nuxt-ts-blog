@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center pt-16 md:pt-32">
+  <div class="text-center">
     <p class="text-sm md:text-base text-teal font-bold">
       - {{ curDate }} -<span class="text-black"></span>
     </p>
