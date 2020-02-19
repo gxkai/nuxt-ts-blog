@@ -6,14 +6,14 @@
           class="flex text-white text-base no-underline hover:text-white hover:no-underline"
           to="/"
         >
-          👻 <span class="pl-1 text-green-500">顾旭凯的个人博客</span>
+          👻 <span class="pl-1 text-green-500 hidden w-0 md:w-auto md:block">顾旭凯的个人博客</span>
         </nuxt-link>
       </div>
-      <div class="flex pl-4 text-sm">
-        <ul class="list-none flex justify-between flex-1 md:flex-none items-center">
+      <div class="hidden md:flex pl-4 text-sm">
+        <ul class="list-none flex flex-1 md:flex-none items-center flex-wrap">
           <li class="mr-2">
             <nuxt-link class="inline-block py-2 px-2 text-white no-underline" to="/"
-              >HOME</nuxt-link
+              >Home</nuxt-link
             >
           </li>
           <li class="mr-2">
@@ -21,25 +21,39 @@
               >About</nuxt-link
             >
           </li>
-          <li class="mr-2">
-            <div class="ml-auto mr-2 search-bar">
-              <input v-model="keyword" type="text" class="search-input" placeholder="搜索文章" />
-
-              <div v-show="searchResult.length > 0" class="search-result">
-                <nuxt-link
-                  v-for="(post, index) in searchResult"
-                  :key="index"
-                  tag="a"
-                  class="search-result-item"
-                  :to="'/posts/' + post.slugifiedFilename"
-                  >{{ post.title }}</nuxt-link
-                >
-              </div>
-            </div>
-          </li>
         </ul>
       </div>
+      <div class="m-auto  search-bar">
+        <input v-model="keyword" type="text" class="search-input" placeholder="搜索文章" />
+
+        <div v-show="searchResult.length > 0" class="search-result">
+          <nuxt-link
+            v-for="(post, index) in searchResult"
+            :key="index"
+            tag="a"
+            class="search-result-item"
+            :to="'/posts/' + post.slugifiedFilename"
+            >{{ post.title }}</nuxt-link
+          >
+        </div>
+      </div>
+      <span
+        class="md:hidden mdi text-white text-lg dropdown-menu-toggle ml-4"
+        :class="menutoggleClass"
+        @click="toggleDropdownMenu"
+      />
     </div>
+    <ul
+      v-if="dropdownMenuVisible"
+      class="sm:flex sm:flex-col md:hidden w-full bg-transparent mt-5 list-none p-0"
+    >
+      <li class="text-center">
+        <nuxt-link class="inline-block py-2 text-white no-underline" to="/">Home</nuxt-link>
+      </li>
+      <li class="text-center">
+        <nuxt-link class="inline-block py-2 text-white no-underline" to="/about">About</nuxt-link>
+      </li>
+    </ul>
   </nav>
 </template>
 <script lang="ts">

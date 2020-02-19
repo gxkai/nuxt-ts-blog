@@ -2,7 +2,7 @@
   <div class="container mx-auto -mt-32">
     <div class="mx-0 sm:mx-6">
       <div
-        class="bg-white w-full p-8 md:p-24 text-xl md:text-2xl text-grey-darkest leading-normal shadow-md m-5"
+        class="bg-white w-full p-8 md:p-24 text-xl md:text-2xl text-grey-darkest leading-normal shadow-md mt-5"
       >
         <!--Post Content-->
 

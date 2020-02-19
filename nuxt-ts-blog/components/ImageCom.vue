@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container w-full  mx-auto bg-white bg-cover mt-8 rounded"
+    class="container w-full  mx-auto bg-white bg-contain sm:bg-cover sm:bg-no-repeat  mt-8 rounded"
     style="background-image:url('/kobe.JPG'); height: 75vh;"
   ></div>
 </template>
