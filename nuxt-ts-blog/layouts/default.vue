@@ -11,42 +11,6 @@
     <!--slide in nav-->
     <Slide />
     <Nuxt />
-
-    <!--    &lt;!&ndash;Container&ndash;&gt;-->
-    <!--    <ContainerCom />-->
-    <!--    <div id="app" class="bg-grey-lighter">-->
-    <!--      <div class="container w-full max-w-2xl mx-auto px-2 py-8">-->
-    <!--        <div class=" flex flex-wrap -mx-2">-->
-    <!--          <div v-for="(item, index) in content" :key="index" class="w-full md:w-1/3 px-2 pb-12">-->
-    <!--            <div class=" bg-white rounded shadow-md hover:shadow-lg relative smooth">-->
-    <!--              <span class="no-underline hover:no-underline">-->
-    <!--                <template>-->
-    <!--                  <img :src=`https://source.unsplash.com/${item.unsplash}` class="h-48 w-full-->
-    <!--                  rounded-t shadow"/>-->
-    <!--                </template>-->
-
-    <!--                <div class="p-6 h-auto ">-->
-    <!--                  <p class="text-grey-dark text-xs md:text-sm">{{ item.category }}</p>-->
-    <!--                  <div class="font-bold text-xl text-black">{{ item.title }}</div>-->
-    <!--                  <p class="text-grey-darkest font-serif text-base mb-5">-->
-    <!--                    {{ item.article }}-->
-    <!--                  </p>-->
-    <!--                </div>-->
-    <!--                <div class="flex items-center justify-between pin-x pin-b p-6">-->
-    <!--                  <img-->
-    <!--                    class="w-8 h-8 rounded-full mr-4"-->
-    <!--                    src="http://i.pravatar.cc/300"-->
-    <!--                    alt="Avatar"-->
-    <!--                  />-->
-    <!--                  <p class="text-grey-dark text-xs md:text-sm">{{ item.min }} MIN READ</p>-->
-    <!--                </div>-->
-    <!--              </span>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--      </div>-->
-    <!--    </div>-->
-
     <Footer />
     <BackToTop />
   </div>
@@ -104,7 +68,7 @@ export default class Deaf extends Vue {
         header.classList.add('hidden')
       }
     })
-    this.pb = document.getElementById('footer').clientHeight
+    this.pb = document.getElementById('footer').clientHeight + 10
   }
 }
 </script>

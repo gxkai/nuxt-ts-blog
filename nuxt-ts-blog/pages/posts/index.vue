@@ -30,6 +30,8 @@
         </div>
       </nuxt-link>
     </div>
+    <!--Container-->
+    <ContainerCom />
 
     <div class="paginator">
       <nuxt-link

@@ -19,7 +19,7 @@ import { Vue, Component } from 'vue-property-decorator'
 import dayjs from 'dayjs'
 @Component
 export default class Title extends Vue {
-  curDate = dayjs().format('YYYY-MM-dd')
+  curDate = '1978 - 2020'
 }
 </script>
 

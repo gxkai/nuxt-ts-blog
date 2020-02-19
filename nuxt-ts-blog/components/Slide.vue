@@ -8,7 +8,7 @@
       <div class="flex flex-wrap items-center content-center">
         <div class="flex w-1/2 justify-start text-white font-extrabold">
           <a class="flex text-black no-underline hover:text-black hover:no-underline pl-2" href="#">
-            👻 <span class="hidden w-0 md:w-auto md:block pl-1">顾旭凯的个人博客</span>
+            👻 <span class="pl-1 text-green-500">顾旭凯的个人博客</span>
           </a>
         </div>
         <div class="flex w-1/2 justify-end content-center">
