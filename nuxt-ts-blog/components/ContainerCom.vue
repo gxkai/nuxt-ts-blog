@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto -mt-4 md:-mt-32">
+  <div class="container mx-auto -mt-4">
     <div class="mx-0 sm:mx-6">
       <div
         class="bg-white w-full p-8 md:p-24 text-xl md:text-2xl text-grey-darkest leading-normal shadow-md mt-5"

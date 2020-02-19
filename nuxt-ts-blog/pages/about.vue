@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto">
     <Title />
-    <ImageCom />
+    <Video />
     <ContainerCom />
   </div>
 </template>
@@ -11,9 +11,10 @@ import Vue from 'vue'
 import Title from '~/components/Title.vue'
 import ImageCom from '~/components/ImageCom.vue'
 import ContainerCom from '~/components/ContainerCom.vue'
+import Video from '~/components/Video.vue'
 
 export default Vue.extend({
-  components: { ContainerCom, ImageCom, Title },
+  components: { Video, ContainerCom, ImageCom, Title },
 
   async asyncData(app) {},
 
