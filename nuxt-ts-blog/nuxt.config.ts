@@ -31,7 +31,7 @@ const config: Configuration = {
    */
   head: {
     titleTemplate: title => {
-      return title ? `${title} - 顾旭凯` : '顾旭凯'
+      return title ? `${title} - Kobe` : 'Kobe'
     },
     meta: [
       { charset: 'utf-8' },
