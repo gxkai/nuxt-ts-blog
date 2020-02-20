@@ -83,6 +83,10 @@ export default class Nav extends Vue {
       title: 'Kobe',
       path: '/kobe',
     },
+    {
+      title: 'Planet',
+      path: '/planet',
+    },
   ]
 
   posts: Post[] = []
