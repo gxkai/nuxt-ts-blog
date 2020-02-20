@@ -17,7 +17,6 @@ const args = yargs
     description: '是否作为草稿',
     alias: 'd',
   }).argv
-
 const { title, draft } = args
 
 if (!title) {

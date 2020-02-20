@@ -4,7 +4,7 @@
       <div class="w-full mx-auto flex flex-wrap items-center">
         <div class="flex w-full md:w-1/2 justify-center md:justify-start text-white font-extrabold">
           <a class="text-black no-underline hover:text-black hover:no-underline" href="#">
-            👻 <span class="text-base text-green-500"> 顾旭凯的个人博客</span>
+            👻 <span class="text-base text-green-500"> {{$store.state.title}}</span>
           </a>
         </div>
         <div class="flex w-full pt-2 content-center justify-between md:w-1/2 md:justify-end">

@@ -5,15 +5,16 @@
   "author": "gxkai",
   "private": true,
   "scripts": {
-    "dev": "yarn run generate-post-list && nuxt-ts",
-    "build": "yarn run generate-post-list --production && nuxt-ts build",
+    "dev": "yarn run list && nuxt-ts",
+    "build": "yarn run list --production && nuxt-ts build",
     "start": "nuxt-ts start",
     "pm2": "pm2 start npm -- run start",
     "generate": "nuxt-ts generate && scp -r dist/* root@139.196.102.55:~/html",
     "lint": "eslint --ext .ts,.js,.vue --ignore-path .eslintignore .",
     "test": "jest",
-    "generate-post-list": "ts-node --project scripts/tsconfig.json scripts/generate-post-list.ts generate",
-    "new": "ts-node --project scripts/tsconfig.json scripts/create-post.ts"
+    "list": "ts-node --project scripts/tsconfig.json scripts/generate-post-list.ts generate",
+    "new": "ts-node --project scripts/tsconfig.json scripts/create-post.ts -d true -t 两数相加",
+    "scrapy": "ts-node --project scripts/tsconfig.json scripts/scrapy.ts"
   },
   "husky": {
     "hooks": {
@@ -52,6 +53,7 @@
     "autoprefixer": "^9.7.4",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^25.1.0",
+    "cheerio": "^1.0.0-rc.3",
     "color": "^3.1.2",
     "copy-webpack-plugin": "^5.1.1",
     "dayjs": "^1.8.19",

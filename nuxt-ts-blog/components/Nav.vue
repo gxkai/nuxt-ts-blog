@@ -1,25 +1,23 @@
 <template>
-  <nav class="bg-indigo-darkest p-4 mt-0 w-full">
+  <nav class="bg-indigo-darkest p-4 mt-0 w-full z-50">
     <div class="container mx-auto flex items-center">
       <div class="flex text-white font-extrabold">
         <nuxt-link
           class="flex text-white text-base no-underline hover:text-white hover:no-underline"
           to="/"
         >
-          👻 <span class="pl-1 text-green-500 hidden w-0 md:w-auto md:block">顾旭凯的个人博客</span>
+          👻
+          <span class="pl-1 text-green-500 hidden w-0 md:w-auto md:block">{{
+            $store.state.title
+          }}</span>
         </nuxt-link>
       </div>
       <div class="hidden md:flex pl-4 text-sm">
         <ul class="list-none flex flex-1 md:flex-none items-center flex-wrap">
-          <li class="mr-2">
-            <nuxt-link class="inline-block py-2 px-2 text-white no-underline" to="/"
-              >Home</nuxt-link
-            >
-          </li>
-          <li class="mr-2">
-            <nuxt-link class="inline-block py-2 px-2 text-white no-underline" to="/kobe"
-              >Kobe</nuxt-link
-            >
+          <li v-for="route in routes" :key="route.title" class="mr-2">
+            <nuxt-link class="inline-block py-2 px-2 text-white no-underline" :to="route.path">{{
+              route.title
+            }}</nuxt-link>
           </li>
         </ul>
       </div>
@@ -36,11 +34,10 @@
       v-if="dropdownMenuVisible"
       class="sm:flex sm:flex-col md:hidden w-full bg-transparent mt-5 list-none p-0"
     >
-      <li class="text-center">
-        <nuxt-link class="inline-block py-2 text-white no-underline" to="/">Home</nuxt-link>
-      </li>
-      <li class="text-center">
-        <nuxt-link class="inline-block py-2 text-white no-underline" to="/kobe">Kobe</nuxt-link>
+      <li v-for="route in routes" :key="route.title" class="text-center">
+        <nuxt-link class="inline-block py-2 text-white no-underline" :to="route.path">{{
+          route.title
+        }}</nuxt-link>
       </li>
     </ul>
     <div
@@ -71,9 +68,23 @@ interface Post {
 
   [key: string]: any
 }
-
+interface Route {
+  title: string
+  path: string
+}
 @Component
 export default class Nav extends Vue {
+  routes: Route[] = [
+    {
+      title: 'Home',
+      path: '/',
+    },
+    {
+      title: 'Kobe',
+      path: '/kobe',
+    },
+  ]
+
   posts: Post[] = []
   keyword: string = ''
   searchResult: Post[] = []

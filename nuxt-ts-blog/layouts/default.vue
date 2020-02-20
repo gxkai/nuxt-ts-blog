@@ -1,10 +1,4 @@
 <template>
-  <!--  <div>-->
-  <!--    <Header />-->
-  <!--    <nuxt />-->
-  <!--    <Footer />-->
-  <!--    <BackToTop />-->
-  <!--  </div>-->
   <div class="font-sans leading-normal tracking-normal" :style="{ 'padding-bottom': pb + 'px' }">
     <!--Nav-->
     <Nav />
@@ -22,12 +16,6 @@ import Nav from '../components/Nav'
 import Slide from '../components/Slide'
 import Footer from '../components/Footer'
 import BackToTop from '../components/BackToTop'
-import Title from '~/components/Title'
-import ImageCom from '~/components/ImageCom'
-import ContainerCom from '~/components/ContainerCom'
-// import Header from '../components/Header'
-/* Progress bar */
-// Source: https://alligator.io/js/progress-bar-javascript-css-variables/
 @Component({
   components: {
     Footer,
