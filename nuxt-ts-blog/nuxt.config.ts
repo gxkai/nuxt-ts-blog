@@ -149,7 +149,7 @@ const config: Configuration = {
   },
 
   generate: {
-    routes: ['404'].concat(posts.map(post => `/posts/${post.slugifiedFilename}`)),
+    routes: posts.map(post => `/posts/${post.slugifiedFilename}`),
   },
 }
 
