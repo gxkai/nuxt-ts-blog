@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <!--太阳系系统-->
     <div class="taiyangxi">
       <div class="xingxing"></div>
@@ -278,24 +278,10 @@ export default class Planet extends Vue {
 }
 </script>
 <style scoped>
-html,
-body {
-  margin: 0;
-  height: 100%;
-  width: 100%;
-}
-
-body {
-  background-color: rgb(34, 39, 56);
-  transition: 1s linear;
-}
-
 .taiyangxi {
   position: relative;
-  width: 100vw;
   height: 100vh;
   margin: 0 auto;
-  background-color: rgb(34, 39, 56);
   transition: 1s linear;
 }
 
