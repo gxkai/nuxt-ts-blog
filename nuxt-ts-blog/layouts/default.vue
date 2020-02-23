@@ -2,7 +2,7 @@
   <div class="font-sans leading-normal tracking-normal text-normal">
     <div class="h-screen flex flex-col">
       <Nav />
-      <Nuxt class="flex-1" />
+      <Nuxt class="flex-1 py-10" />
       <Footer />
     </div>
     <!--Nav-->
