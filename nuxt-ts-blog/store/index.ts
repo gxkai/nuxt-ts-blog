@@ -1,6 +1,7 @@
 export const state = () => {
   return {
     title: '顾旭凯的个人博客',
+    motto: 'Keep Calm and Carry On',
   }
 }
 

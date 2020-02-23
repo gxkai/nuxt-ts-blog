@@ -12,7 +12,7 @@
             class="flex text-black no-underline hover:text-black hover:no-underline pl-2"
             to="/"
           >
-            👻 <span class="pl-1 text-green-500">{{$store.state.title}}</span>
+            👻 <span class="pl-1 text-green-500">{{ $store.state.motto }}</span>
           </nuxt-link>
         </div>
         <div class="flex w-1/2 justify-end content-center">
