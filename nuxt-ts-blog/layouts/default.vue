@@ -1,11 +1,13 @@
 <template>
-  <div class="font-sans leading-normal tracking-normal" :style="{ 'padding-bottom': pb + 'px' }">
+  <div class="font-sans leading-normal tracking-normal text-normal">
+    <div class="h-screen flex flex-col">
+      <Nav />
+      <Nuxt class="flex-1" />
+      <Footer />
+    </div>
     <!--Nav-->
-    <Nav />
     <!--slide in nav-->
     <Slide />
-    <Nuxt />
-    <Footer />
     <BackToTop />
   </div>
 </template>
@@ -25,7 +27,6 @@ import BackToTop from '../components/BackToTop'
   },
 })
 export default class Deaf extends Vue {
-  pb = 0
   mounted() {
     /* Progress bar */
     // Source: https://alligator.io/js/progress-bar-javascript-css-variables/
@@ -56,7 +57,6 @@ export default class Deaf extends Vue {
         header.classList.add('hidden')
       }
     })
-    this.pb = document.getElementById('footer').clientHeight + 10
 
     window.onload = function() {
       document.addEventListener('gesturestart', function(e) {

@@ -4,5 +4,6 @@ module.exports = {
       center: true,
       padding: '10px',
     },
+    minWidth: theme => theme('width'),
   },
 }
