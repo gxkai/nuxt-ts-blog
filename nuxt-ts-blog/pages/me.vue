@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="w-1/2 mx-auto">
+    <div class="md:w-1/2 mx-auto">
       <div class="flex">
         <div class="flex-1">
           <div class="text-bold text-2xl py-2">
