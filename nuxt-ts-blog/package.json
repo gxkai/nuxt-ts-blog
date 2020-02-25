@@ -13,7 +13,7 @@
     "lint": "eslint --ext .ts,.js,.vue --ignore-path .eslintignore .",
     "test": "jest",
     "list": "ts-node --project scripts/tsconfig.json scripts/generate-post-list.ts generate",
-    "new": "ts-node --project scripts/tsconfig.json scripts/create-post.ts -d true -t 两数相加",
+    "new": "ts-node --project scripts/tsconfig.json scripts/create-post.ts -d true -t 无重复字符的最长子串",
     "scrapy": "ts-node --project scripts/tsconfig.json scripts/scrapy.ts"
   },
   "husky": {
